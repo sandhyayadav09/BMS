@@ -1,0 +1,107 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "b0b9bbd0-e83f-11ee-938e-39f3bc48828c"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "cdbc7dd0-e83f-11ee-938e-39f3bc48828c"
+    },
+    "label" : "",
+    "name" : "Kitchen Energy Sensor",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Energy"
+  },
+  "credentials" : {
+    "credentialsId" : "Qyr3FQBN97sIyOMjkzlP",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "f55cb720-e753-11ee-9d78-27edb85da3c3"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "cdbc7dd0-e83f-11ee-938e-39f3bc48828c"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "fc41b310-e753-11ee-9d78-27edb85da3c3"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "cdbc7dd0-e83f-11ee-938e-39f3bc48828c"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "67a9a040-eac9-11ee-9a30-a12f0dc2368b"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "cdbc7dd0-e83f-11ee-938e-39f3bc48828c"
+    },
+    "type" : "Manages",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1711107747974,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1711107747975,
+      "longValue" : 1711107747970,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "thresholdEnergy",
+      "lastUpdateTs" : 1711107677796,
+      "longValue" : 100,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

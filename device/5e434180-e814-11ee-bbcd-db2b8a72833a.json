@@ -1,0 +1,87 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "17750c30-e818-11ee-bbcd-db2b8a72833a"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "5e434180-e814-11ee-bbcd-db2b8a72833a"
+    },
+    "label" : "",
+    "name" : "Kitchen Humidity Sensor",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Humidity"
+  },
+  "credentials" : {
+    "credentialsId" : "I94Icvmq6FBWBIV9HaPw",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "fc41b310-e753-11ee-9d78-27edb85da3c3"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "5e434180-e814-11ee-bbcd-db2b8a72833a"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "67a9a040-eac9-11ee-9a30-a12f0dc2368b"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "5e434180-e814-11ee-bbcd-db2b8a72833a"
+    },
+    "type" : "Manages",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1711089081387,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1711089081387,
+      "longValue" : 1711089081375,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}
