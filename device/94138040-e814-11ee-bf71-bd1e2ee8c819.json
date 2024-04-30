@@ -1,0 +1,87 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "1f53aa60-e818-11ee-bf71-bd1e2ee8c819"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "94138040-e814-11ee-bf71-bd1e2ee8c819"
+    },
+    "label" : "",
+    "name" : "BedRoom Thermostat",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Thermostat"
+  },
+  "credentials" : {
+    "credentialsId" : "MKe52BWp4QdJkzkQfkvQ",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "020fc0c0-e754-11ee-9d78-27edb85da3c3"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "94138040-e814-11ee-bf71-bd1e2ee8c819"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "67a9a040-eac9-11ee-9a30-a12f0dc2368b"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "94138040-e814-11ee-bf71-bd1e2ee8c819"
+    },
+    "type" : "Manages",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1711089159294,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1711089159295,
+      "longValue" : 1711089159293,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

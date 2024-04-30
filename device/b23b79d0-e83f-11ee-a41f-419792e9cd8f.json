@@ -1,0 +1,95 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "b0b9bbd0-e83f-11ee-938e-39f3bc48828c"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "b23b79d0-e83f-11ee-a41f-419792e9cd8f"
+    },
+    "label" : "",
+    "name" : "BedRoom Energy Sensor",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Energy"
+  },
+  "credentials" : {
+    "credentialsId" : "M7U0uDz8z8r8XIWI4kXN",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "020fc0c0-e754-11ee-9d78-27edb85da3c3"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "b23b79d0-e83f-11ee-a41f-419792e9cd8f"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "67a9a040-eac9-11ee-9a30-a12f0dc2368b"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "b23b79d0-e83f-11ee-a41f-419792e9cd8f"
+    },
+    "type" : "Manages",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1711107682653,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1711107682655,
+      "longValue" : 1711107682652,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "thresholdEnergy",
+      "lastUpdateTs" : 1711107500342,
+      "longValue" : 100,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : "",
+      "lastConnectedGateway" : "b362df70-e816-11ee-bbcd-db2b8a72833a"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "62c4ea80-e83f-11ee-bf71-bd1e2ee8c819"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "64b39b20-e83f-11ee-bf71-bd1e2ee8c819"
+    },
+    "label" : "",
+    "name" : "BedRoom AC",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "AC"
+  },
+  "credentials" : {
+    "credentialsId" : "I72h3qdTMjeauU9AT6Td",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "020fc0c0-e754-11ee-9d78-27edb85da3c3"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "64b39b20-e83f-11ee-bf71-bd1e2ee8c819"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "67a9a040-eac9-11ee-9a30-a12f0dc2368b"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "64b39b20-e83f-11ee-bf71-bd1e2ee8c819"
+    },
+    "type" : "Manages",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1711474106471,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1711474106471,
+      "longValue" : 1711474106470,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1711473453227,
+      "longValue" : 1711473453009,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1711473440448,
+      "longValue" : 1711473440448,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1711473453017,
+      "longValue" : 1711473453017,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}
