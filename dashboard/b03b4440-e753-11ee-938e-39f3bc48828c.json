@@ -5204,20 +5204,20 @@
               "widgets" : {
                 "cf10e6eb-1ea9-9f61-3374-eacfd2e52153" : {
                   "sizeX" : 11,
-                  "sizeY" : 6,
+                  "sizeY" : 5,
                   "row" : 0,
                   "col" : 13
                 },
                 "65d90886-35ec-4930-6098-8e665c01fc73" : {
                   "sizeX" : 13,
-                  "sizeY" : 6,
+                  "sizeY" : 5,
                   "row" : 0,
                   "col" : 0
                 },
                 "7e21c45c-f49a-6094-4019-16708f39dc4a" : {
                   "sizeX" : 24,
-                  "sizeY" : 7,
-                  "row" : 6,
+                  "sizeY" : 6,
+                  "row" : 5,
                   "col" : 0
                 }
               },
