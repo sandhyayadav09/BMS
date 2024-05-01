@@ -971,7 +971,7 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "timewindowMs" : 2592000000,
+                "timewindowMs" : 25920000000,
                 "quickInterval" : "CURRENT_DAY",
                 "interval" : 1000
               },
@@ -1727,14 +1727,15 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "timewindowMs" : 2592000000,
+                "timewindowMs" : 25920000000,
                 "quickInterval" : "CURRENT_DAY",
                 "interval" : 1000
               },
               "aggregation" : {
                 "type" : "NONE",
                 "limit" : 200
-              }
+              },
+              "timezone" : null
             },
             "showTitle" : true,
             "backgroundColor" : "#2E2F3B",
@@ -4498,89 +4499,6 @@
           "col" : 0,
           "id" : "65d90886-35ec-4930-6098-8e665c01fc73"
         },
-        "b5e37cd9-cf28-c7b5-df3f-3d27f98574f8" : {
-          "typeFullFqn" : "tenant.custom_widget_with_gauge_js",
-          "type" : "latest",
-          "sizeX" : 7.5,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : "",
-              "entityAliasId" : "2f7e2460-cbb2-3401-039c-11453f3de7aa",
-              "dataKeys" : [ {
-                "name" : "occupancy",
-                "type" : "timeseries",
-                "label" : "occupancy",
-                "color" : "#9F7DE1",
-                "settings" : { },
-                "_hash" : 0.4057336834838514
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1711171503256,
-                  "endTimeMs" : 1711257903256
-                },
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "showTitle" : true,
-            "backgroundColor" : "#2E2F3B",
-            "color" : "rgba(252, 250, 250, 0.87)",
-            "padding" : "8px",
-            "settings" : { },
-            "title" : "Occupancy",
-            "useDashboardTimewindow" : true,
-            "displayTimewindow" : true,
-            "showTitleIcon" : true,
-            "titleTooltip" : "",
-            "dropShadow" : true,
-            "enableFullscreen" : true,
-            "enableDataExport" : true,
-            "widgetStyle" : { },
-            "widgetCss" : "",
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "titleFont" : {
-              "sizeUnit" : "px",
-              "family" : null,
-              "weight" : "bold",
-              "style" : null
-            },
-            "titleIcon" : "",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "margin" : "3px",
-            "borderRadius" : "14px"
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "b5e37cd9-cf28-c7b5-df3f-3d27f98574f8"
-        },
         "1e403f8b-6009-cd42-62d3-701d7ba82d92" : {
           "typeFullFqn" : "tenant.custom_widget_of_timeseries",
           "type" : "timeseries",
@@ -5193,6 +5111,131 @@
           "row" : 0,
           "col" : 0,
           "id" : "7e21c45c-f49a-6094-4019-16708f39dc4a"
+        },
+        "bf59ff58-08c1-47ba-b4cd-ba103c0f698a" : {
+          "typeFullFqn" : "system.digital_gauges.digital_vertical_bar",
+          "type" : "latest",
+          "sizeX" : 2.5,
+          "sizeY" : 4.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "2f7e2460-cbb2-3401-039c-11453f3de7aa",
+              "dataKeys" : [ {
+                "name" : "occupancy",
+                "type" : "timeseries",
+                "label" : "occupancy",
+                "color" : "#770E6B",
+                "settings" : { },
+                "_hash" : 0.6841506393957875
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1714501918156,
+                  "endTimeMs" : 1714588318156
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#000000",
+            "color" : "rgba(255, 254, 254, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "minValue" : 0,
+              "maxValue" : 10,
+              "gaugeType" : "verticalBar",
+              "donutStartAngle" : 90,
+              "defaultColor" : null,
+              "gaugeWidthScale" : 0.75,
+              "neonGlowBrightness" : 20,
+              "dashThickness" : 1.2,
+              "roundedLineCap" : false,
+              "gaugeColor" : "#171a1c",
+              "useFixedLevelColor" : false,
+              "levelColors" : [ "#3d5afe", "#f44336" ],
+              "fixedLevelColors" : [ ],
+              "showTitle" : false,
+              "title" : null,
+              "titleFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : null
+              },
+              "showUnitTitle" : true,
+              "unitTitle" : null,
+              "showTimestamp" : false,
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : null
+              },
+              "showValue" : true,
+              "valueFont" : {
+                "family" : "Segment7Standard",
+                "size" : 14,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : null
+              },
+              "showMinMax" : true,
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "normal",
+                "color" : "#cccccc"
+              },
+              "showTicks" : false,
+              "tickWidth" : 4,
+              "colorTicks" : "#666",
+              "ticksValue" : [ ],
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear"
+            },
+            "title" : "Digital vertical bar",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "widgetStyle" : { },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "bf59ff58-08c1-47ba-b4cd-ba103c0f698a"
         }
       },
       "states" : {
@@ -5242,22 +5285,22 @@
             "main" : {
               "widgets" : {
                 "8ef8280e-0a20-012a-02ab-9fb7ae7a0d32" : {
-                  "sizeX" : 3,
-                  "sizeY" : 5,
+                  "sizeX" : 4,
+                  "sizeY" : 6,
+                  "row" : 0,
+                  "col" : 8
+                },
+                "8835b03a-d0a0-72a3-6fe7-ddf5a10d9d12" : {
+                  "sizeX" : 4,
+                  "sizeY" : 6,
                   "row" : 0,
                   "col" : 12
                 },
-                "8835b03a-d0a0-72a3-6fe7-ddf5a10d9d12" : {
-                  "sizeX" : 3,
-                  "sizeY" : 5,
-                  "row" : 0,
-                  "col" : 15
-                },
                 "cff85a11-ba98-f7cb-4091-19c91ff69373" : {
-                  "sizeX" : 3,
-                  "sizeY" : 5,
+                  "sizeX" : 4,
+                  "sizeY" : 6,
                   "row" : 0,
-                  "col" : 18
+                  "col" : 16
                 },
                 "d943fa77-32ef-f6ea-b414-3c0b72dcca7f" : {
                   "sizeX" : 5,
@@ -5266,10 +5309,10 @@
                   "col" : 19
                 },
                 "acdfab38-cea5-7e6c-91f5-2d679efa8491" : {
-                  "sizeX" : 3,
-                  "sizeY" : 5,
+                  "sizeX" : 4,
+                  "sizeY" : 6,
                   "row" : 0,
-                  "col" : 21
+                  "col" : 20
                 },
                 "d308a12e-ec57-fb80-e269-846a546d699a" : {
                   "sizeX" : 5,
@@ -5301,12 +5344,6 @@
                   "row" : 12,
                   "col" : 0
                 },
-                "b5e37cd9-cf28-c7b5-df3f-3d27f98574f8" : {
-                  "sizeX" : 7,
-                  "sizeY" : 5,
-                  "row" : 0,
-                  "col" : 5
-                },
                 "1e403f8b-6009-cd42-62d3-701d7ba82d92" : {
                   "sizeX" : 9,
                   "sizeY" : 6,
@@ -5324,6 +5361,12 @@
                   "sizeY" : 7,
                   "row" : 12,
                   "col" : 12
+                },
+                "bf59ff58-08c1-47ba-b4cd-ba103c0f698a" : {
+                  "sizeX" : 3,
+                  "sizeY" : 6,
+                  "row" : 0,
+                  "col" : 5
                 }
               },
               "gridSettings" : {
